@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/34/RavenEye/src/com/reality
+END
+DataServer.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/15/RavenEye/src/com/reality/DataServer.java
+END
+RealityPlaceBitmapWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/33/RavenEye/src/com/reality/RealityPlaceBitmapWrapper.java
+END
+SectionedAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/34/RavenEye/src/com/reality/SectionedAdapter.java
+END
+Place.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/34/RavenEye/src/com/reality/Place.java
+END
+RealityCompassView.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/15/RavenEye/src/com/reality/RealityCompassView.java
+END
+RealityOverlayView.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/34/RavenEye/src/com/reality/RealityOverlayView.java
+END
+ReviewListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/33/RavenEye/src/com/reality/ReviewListActivity.java
+END
+RealityPhysicsSensorListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/34/RavenEye/src/com/reality/RealityPhysicsSensorListener.java
+END
+RealityGraphView.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/31/RavenEye/src/com/reality/RealityGraphView.java
+END
+RealityScanarView.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/15/RavenEye/src/com/reality/RealityScanarView.java
+END
+SensorViewGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/31/RavenEye/src/com/reality/SensorViewGroup.java
+END
+RealitySmallCompassView.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/34/RavenEye/src/com/reality/RealitySmallCompassView.java
+END
+SensorView.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/34/RavenEye/src/com/reality/SensorView.java
+END
+RealityActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/34/RavenEye/src/com/reality/RealityActivity.java
+END
+PlaceFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/33/RavenEye/src/com/reality/PlaceFilter.java
+END
+PictureFrameActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/33/RavenEye/src/com/reality/PictureFrameActivity.java
+END
+MapGestureDetectorOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/15/RavenEye/src/com/reality/MapGestureDetectorOverlay.java
+END
+PlacesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/34/RavenEye/src/com/reality/PlacesActivity.java
+END
+RealityLocationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/33/RavenEye/src/com/reality/RealityLocationListener.java
+END
+PlacesListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/34/RavenEye/src/com/reality/PlacesListActivity.java
+END
+NavigationItemizedOverlay.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/34/RavenEye/src/com/reality/NavigationItemizedOverlay.java
+END
+Review.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/15/RavenEye/src/com/reality/Review.java
+END
+Coordinate.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/34/RavenEye/src/com/reality/Coordinate.java
+END
+NavigationMapActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/34/RavenEye/src/com/reality/NavigationMapActivity.java
+END
+RealityDirectionView.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/31/RavenEye/src/com/reality/RealityDirectionView.java
+END
+HeadingString.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/31/RavenEye/src/com/reality/HeadingString.java
+END
+GraphView.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/15/RavenEye/src/com/reality/GraphView.java
+END

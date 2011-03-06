@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/hidden_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dip"
+        android:visibility="visible"
+        android:background="#8899CC00">
+        <TextView
+            android:text="Loading..."
+            android:id="@+id/hidden_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/places_no_items"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:layout_weight="1" />
+    <LinearLayout
+        android:id="@+id/write_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:paddingTop="8dip"
+        android:paddingBottom="3dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:background="#88666666">
+        <EditText
+            android:id="@+id/review_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxLines="7"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:hint="@string/review_input_prompt_text" />
+        <Button
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:onClick="onSubmitClick" />
+    </LinearLayout>
+</LinearLayout>

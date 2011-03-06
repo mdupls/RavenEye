@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Places Directory"
+        android:id="@+id/directory"
+        android:icon="@drawable/ic_menu_view"></item>
+    <item
+        android:title="View Map"
+        android:id="@+id/map"
+        android:icon="@drawable/ic_menu_mapmode"></item>
+</menu>

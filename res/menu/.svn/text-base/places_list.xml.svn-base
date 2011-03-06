@@ -1,0 +1,15 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Refresh"
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_menu_rotate"></item>
+    <item
+        android:title="View Reality"
+        android:id="@+id/reality"
+        android:icon="@drawable/ic_menu_directions"></item>
+    <item
+        android:title="Show Map"
+        android:id="@+id/map"
+        android:icon="@drawable/ic_menu_mapmode"></item>
+</menu>

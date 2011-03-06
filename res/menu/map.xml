@@ -1,0 +1,19 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_menu_search"></item>
+    <item
+        android:title="View Places"
+        android:id="@+id/places"
+        android:icon="@drawable/ic_menu_gallery"></item>
+    <item
+        android:title="View Reality"
+        android:id="@+id/directions"
+        android:icon="@drawable/ic_menu_directions"></item>
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@drawable/ic_menu_preferences"></item>
+</menu>

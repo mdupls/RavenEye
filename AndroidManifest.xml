@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reality"
+    android:versionCode="6"
+    android:versionName="0.4">
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus" />
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:debuggable="true">
+        <uses-library
+            android:name="com.google.android.maps" />
+        <activity
+            android:name="com.reality.NavigationMapActivity"
+            android:label="@string/map_activity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.reality.PlacesListActivity"
+            android:label="@string/places_list_activity"
+            android:theme="@style/Theme.RavenEye">            
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.reality.PlacesActivity"
+            android:label="@string/places_activity"
+            android:theme="@style/Theme.RavenEyeNoTitle">
+        </activity>
+        <activity
+            android:name="com.reality.PictureFrameActivity"
+            android:label="@string/picture_frame_activity"
+            android:theme="@style/Theme.RavenEye">
+        </activity>
+        <activity
+            android:name="com.reality.ReviewListActivity"
+            android:label="@string/review_list_activity"
+            android:theme="@style/Theme.RavenEye">
+        </activity>
+        <activity
+            android:name="com.reality.RealityActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/reality_activity"
+            android:theme="@style/Theme.RealityNoBackground">
+        </activity>
+    </application>
+    <uses-sdk
+        android:minSdkVersion="8" />
+</manifest>

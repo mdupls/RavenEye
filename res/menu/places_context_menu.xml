@@ -1,0 +1,15 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Open"
+        android:id="@+id/open" />
+    <item
+        android:title="View in reality mode"
+        android:id="@+id/reality" />
+    <item
+        android:title="View in map mode"
+        android:id="@+id/map" />
+    <item
+        android:title="Directions"
+        android:id="@+id/directions" />
+</menu>

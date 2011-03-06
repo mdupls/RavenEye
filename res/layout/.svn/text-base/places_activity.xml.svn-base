@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/button_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:paddingTop="5dip"
+        android:paddingBottom="3dip"
+        android:paddingLeft="3dip"
+        android:paddingRight="3dip"
+        android:background="#88666666">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="0.33"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_directions"
+            android:id="@+id/viewreality_btn"
+            android:onClick="onViewRealityClick" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="0.34"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_mapmode"
+            android:layout_below="@+id/hr"
+            android:id="@+id/viewmap_btn"
+            android:layout_toRightOf="@+id/viewreality_btn"
+            android:onClick="onViewMapClick" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_weight="0.33"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_menu_add"
+            android:layout_below="@+id/hr"
+            android:id="@+id/add_favourite_btn"
+            android:layout_toRightOf="@+id/directions_btn"
+            android:onClick="onAddToFavouritesClick" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/scrollview"
+        android:layout_above="@+id/button_bar">
+        <RelativeLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:padding="6dip">
+            <RelativeLayout
+                android:id="@+id/hidden_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dip"
+                android:visibility="visible"
+                android:background="#8899CC00">
+                <TextView
+                    android:text="Loading..."
+                    android:id="@+id/hidden_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF000000"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/name"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/hidden_message"
+                android:layout_margin="4dip"
+                android:paddingBottom="5dip"
+                android:textSize="24dip"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Name" android:layout_width="fill_parent" android:gravity="center_horizontal" android:shadowColor="#ffcc9900" android:shadowRadius="10" android:shadowDy="5"/>
+            <RelativeLayout
+                android:id="@+id/hr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginBottom="5dip"
+                android:paddingTop="4dip"
+                android:paddingBottom="4dip"
+                android:orientation="horizontal"
+                android:background="#33DDDDDD" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"/>
+            <RelativeLayout
+                android:id="@+id/title_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hr"
+                android:layout_marginBottom="5dip"
+                android:paddingTop="3dip"
+                android:paddingBottom="3dip">
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon"
+                    android:id="@+id/picture"
+                    android:onClick="onPictureClick"
+                    android:layout_margin="4dip" android:scaleType="centerCrop"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/building_code_label"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/title_panel"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dip"
+                android:text="Building code:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/building_code"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/building_code_label"
+                android:layout_below="@+id/title_panel"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/direction_label"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/building_code"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dip"
+                android:text="Distance:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/direction"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/direction_label"
+                android:layout_below="@+id/building_code"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="unknown" />
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/direction"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dip"
+                android:text="Description:"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/description_label"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/rating_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:paddingRight="10dip"
+                android:textSize="16sp"
+                android:text="Rating:"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/rate_place"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/rating_label"
+                android:layout_below="@+id/description"
+                android:layout_height="wrap_content"
+                android:textColor="@color/link"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingRight="10dip"
+                android:clickable="true"
+                android:onClick="onRateClick"
+                android:text="(Rate)" />
+            <RatingBar
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_toRightOf="@+id/rate_place"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dip"
+                android:paddingBottom="2dip"
+                android:numStars="5"
+                android:stepSize="1.0"
+                style="?android:attr/ratingBarStyleSmall" android:onClick="onRateClick" android:clickable="true" android:rating="5"/>
+            <TextView
+                android:id="@+id/reviews_label"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dip"
+                android:textSize="16sp"
+                android:text="Reviews:"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/write_review"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_toRightOf="@+id/reviews_label"
+                android:layout_height="wrap_content"
+                android:textColor="@color/link"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:clickable="true"
+                android:onClick="onWriteReviewClick"
+                android:text="(Write a review)" />
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/reviews_label"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dip"
+                android:textSize="16sp"
+                android:text="No reviews written." />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

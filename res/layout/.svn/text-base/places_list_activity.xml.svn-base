@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <LinearLayout
+        android:id="@+id/hidden_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_panel"
+        android:padding="12dip"
+        android:visibility="visible"
+        android:background="#ff8DB6CD">
+        <TextView
+            android:text="Loading..."
+            android:id="@+id/hidden_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hidden_message"
+        android:cacheColorHint="#00000000" />
+    <TextView
+        android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/android:list"
+        android:text="@string/places_no_items"
+        android:padding="10dp"
+        android:textSize="18sp" />
+</RelativeLayout>

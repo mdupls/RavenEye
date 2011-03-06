@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+    <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:apiKey="0OkYiPSIOaUbZ8RZiJTGikd1r15tvi_HK0hEeEQ" />
+    <LinearLayout
+        android:id="@+id/hidden_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:padding="12dip"
+        android:visibility="visible"
+        android:background="#88000000">
+        <TextView
+            android:text="Loading..."
+            android:id="@+id/hidden_message_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFFFF" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/location_btn"
+        android:onClick="onMyLocationClick"
+        android:layout_gravity="bottom|left"
+        android:src="@drawable/ic_menu_mylocation"
+        android:layout_height="45dip"
+        android:layout_width="45dip"
+        android:scaleType="fitCenter"></ImageButton>
+    <LinearLayout
+        android:id="@+id/right_size_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/directions_btn"
+            android:onClick="onDirectionsClick"
+            android:src="@drawable/ic_menu_directions"
+            android:layout_height="45dip"
+            android:layout_width="45dip"
+            android:scaleType="fitCenter"></ImageButton>
+        <ImageButton
+            android:id="@+id/layers_btn"
+            android:onClick="onLayersClick"
+            android:src="@drawable/ic_menu_mapmode"
+            android:layout_height="45dip"
+            android:layout_width="45dip"
+            android:scaleType="fitCenter"></ImageButton>
+    </LinearLayout>
+</FrameLayout>

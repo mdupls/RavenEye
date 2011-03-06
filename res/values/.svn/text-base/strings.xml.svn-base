@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Raven Eye</string>
+<string name="places_no_items">There are no places yet.</string>
+<string name="map_activity">Carleton Map</string><string name="places_list_activity">Places Directory</string>
+
+<string name="places_activity">Places Directory</string>
+<string name="picture_frame_activity">Photo</string>
+<string name="review_list_activity">Reviews</string>
+<string name="review_input_prompt_text">Write a review</string>
+<string name="reality_activity">Augmented Reality</string>
+</resources>

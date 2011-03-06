@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/places_list_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+    android:gravity="center"
+    android:padding="4dp">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:padding="1dip"
+        android:text="Top"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/title"
+        android:layout_alignWithParentIfMissing="true"
+        android:padding="1dip"
+        android:text="Bottom"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/content"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="right"
+        android:padding="1dip"
+        android:text="Bottom"
+        android:textColor="#CCCCCC"
+        android:textSize="14sp" />
+</RelativeLayout>

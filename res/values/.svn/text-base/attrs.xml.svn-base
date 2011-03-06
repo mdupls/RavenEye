@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PictureGallery">
+        <attr name="android:galleryItemBackground" />
+    </declare-styleable>
+    <style name="Theme.RealityNoBackground" parent="android:Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.RavenEye" parent="android:Theme">
+    </style>
+    <style name="Theme.RavenEyeNoTitle" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

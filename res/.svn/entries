@@ -1,0 +1,52 @@
+10
+
+dir
+34
+https://raven-eye.googlecode.com/svn/RavenEye/res
+https://raven-eye.googlecode.com/svn
+
+
+
+2011-02-08T04:22:50.067506Z
+34
+michael@dupls.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2e17354f-37f0-314e-8e93-acfeddb43d9e
+
+anim
+dir
+
+color
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+layout
+dir
+
+menu
+dir
+
+values
+dir
+
